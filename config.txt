@@ -1,0 +1,4 @@
+udp_port1=8080
+udp_port2=8081
+tcp_port=9090
+server_ip=127.0.0.1
