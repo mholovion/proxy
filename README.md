@@ -23,25 +23,15 @@ Each message has the following binary structure (little-endian):
 
 The project uses CMake for building. Follow the steps below to build the application:
 
-1. **Prepare the Build Directory**
-
-   Navigate to the project directory and create a build directory:
-
-   ```bash
-   cd <project_directory>
-   mkdir build
-   cd build
-    ```
-2. **Generate Build Files with CMake**
+1. . **Generate Build Files with CMake**
 
     Generate the build files using CMake:
     ```bash
+    cd <project_directory>
     cmake -S . -B build
     ```
 
-    Build the Project
-
-3. **Build the project using the generated build files:**
+2. **Build the project using the generated build files:**
 
 On Linux/macOS
 
