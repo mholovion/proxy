@@ -7,7 +7,6 @@
 #include <cstdlib>
 #include <thread>
 #include <functional>
-#include <unordered_map>
 #include <iostream>
 
 #include <string>
@@ -18,7 +17,7 @@ volatile sig_atomic_t keep_running = 1;
 void signal_handler(int signal) {
     if (signal == SIGINT || signal == SIGTERM) {
         keep_running = false;
-        std::cout << "\nReceived exit signal. Shutting down..." << std::endl;
+        printf("\nReceived exit signal. Shutting down...");
     }
 }
 
